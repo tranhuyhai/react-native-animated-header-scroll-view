@@ -18,6 +18,7 @@ export const AnimatedFlatList = forwardRef<FlatList, AnimatedFlatListViewProps>(
       headerImage,
       imageStyle,
       HeaderComponent,
+         styleNavbar,
       ...props
     }: AnimatedFlatListViewProps,
     ref
@@ -53,6 +54,7 @@ export const AnimatedFlatList = forwardRef<FlatList, AnimatedFlatListViewProps>(
           imageHeight={imageHeight}
           OverflowHeaderComponent={HeaderNavbarComponent}
           TopNavbarComponent={TopNavBarComponent}
+             styleNavbar={styleNavbar}
         />
       </>
     );
